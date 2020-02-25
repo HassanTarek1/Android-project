@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="#00F3EDED"
+        android:background="#00FFFFFF"
         android:padding="8dp">
 
         <ImageView
             android:id="@+id/imageView_list"
 
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
             android:layout_weight="0.11"
             android:adjustViewBounds="true"
             android:contentDescription="@string/imageview_desc"
@@ -28,11 +28,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="20dp"
             android:layout_toEndOf="@+id/imageView_list"
             android:layout_toRightOf="@+id/imageView_list"
             android:contentDescription="@string/textview_list"
             android:text="@string/textview_list"
+            android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="#E62C2C"
             android:textSize="24sp" />
     </RelativeLayout>
