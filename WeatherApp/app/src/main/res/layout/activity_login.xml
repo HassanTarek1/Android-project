@@ -52,7 +52,7 @@
         android:background="#E91E63"
         android:text="@string/button_login"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#F3EDED"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_pass"
