@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.weatherapp.com.example.weatherapp.DeviceDetailedActivity"></activity>
-        <activity
-            android:name="com.example.weatherapp.com.example.weatherapp.ListActivity"
-            android:label="List Activity"
-            android:parentActivityName="com.example.weatherapp.com.example.weatherapp.LoginActivity"></activity>
-        <activity android:name="com.example.weatherapp.com.example.weatherapp.LoginActivity">
+        <activity android:name="com.example.weatherapp.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.weatherapp.DeviceDetailedActivity"></activity>
+        <activity
+            android:name="com.example.weatherapp.ListActivity"
+            android:label="List Activity"
+            android:parentActivityName="com.example.weatherapp.LoginActivity"></activity>
     </application>
 
 </manifest>
