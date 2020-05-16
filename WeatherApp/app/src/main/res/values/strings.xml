@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WeatherApp</string>
+    <string name="app_name">Ramadany</string>
     <string name="editText_email">Email</string>
     <string name="editText_pass">Password</string>
     <string name="button_login">LOGIN</string>

@@ -6,27 +6,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
     ListView listView;
-    String[] OS={"Android","iPhone","Windows","Blackberry","Linux"};
-    Integer[] imgId=
-            {R.drawable.android,R.drawable.apple,R.drawable.windows,R.drawable.blackberry,R.drawable.linux};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        listView=(ListView)findViewById(R.id.listView);
-        CustomeListView customeListView=new CustomeListView(this,OS,imgId);
-        listView.setAdapter(customeListView);
+        listView=findViewById(R.id.listView1);
+        ArrayList<String> arr1=new ArrayList<>();
+        arr1.add("Mosalsalat");
+        arr1.add("Program Show");
+        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_1,arr1);
+        listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item=OS[position].toString();
-                Intent intent=new Intent(ListActivity.this,DeviceDetailedActivity.class);
-                intent.putExtra("ListViewclickvalue",item);
-                startActivity(intent);
+                if (position==0){
+                    Intent intent=new Intent(ListActivity.this,ListActivity2.class);
+                    startActivity(intent);
+                }else{
+                    Intent intent=new Intent(ListActivity.this,ListActivity3.class);
+                    startActivity(intent);
+                }
             }
         });
     }

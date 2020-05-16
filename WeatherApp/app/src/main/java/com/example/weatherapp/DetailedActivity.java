@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class DeviceDetailedActivity extends AppCompatActivity {
+public class DetailedActivity extends AppCompatActivity {
     private String item;
     private TextView textView;
     @Override
