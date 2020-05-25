@@ -8,6 +8,12 @@
     <string name="textview_list">OS</string>
     <string name="Name">Name</string>
     <string name="Re_password">Re-type Password</string>
+    <string name="Channel">Channel:</string>
+    <string name="DisplayTime">Display Time:</string>
+    <string name="ReDisplayTime">Re-Display Time:</string>
+    <string name="MainStars">Main Stars:</string>
+    <string name="BriefDescription">Brief Description:</string>
+    <string name="Promo">Promo:</string>
     <array name="list">
         <item>Android</item>
         <item>iPhone</item>
